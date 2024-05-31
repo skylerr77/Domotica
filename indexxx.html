@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="icon" href="./fotos/casitamulti.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        header{
+            padding:  0 5%;
+        }
+        .consola{
+            padding: 4%;
+            background-color: rgba(0, 128, 0, 0.216);
+            margin: 4%;
+
+        }
+        .text{
+            justify-content: center;
+        }
+        .multiplayer{
+            margin-left: 50px;
+        }
+        #cabeza{
+            background-color:cadetblue;
+            padding: 1% 1%;
+        }
+
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-img-top {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .card-title, .card-text, ul {
+            margin: 0;
+        }
+        .menu{
+            background-color: rgba(28, 166, 208, 0.216);
+        }
+        .titulocon{
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-decoration: none; 
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabeza">
+        <div  class="container-fluid d-flex justify-content-between">
+            <a href="./index.html"><img src="./fotos/casitamulti.png" alt="" width="60px" height="60px" class="nintendo"></a>
+            <h1 class="nombre text-md-center">Catálogo de dispositivos</h1>
+            <h2 class="numero"><img src="./fotos/llamada.png" alt="" width="35px" height="35px">777000777000</h2>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./fotos/casa-inteligente.png" alt="" width="50px" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#confort" id="confort1">Confort</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seguridad" id="seguridad1">Seguridad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ahorroenergetico" id="ahorroenergetico1">Ahorro energético</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comunicacion" id="comunicacion1">Comunicación</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container consola">
+         <a class="titulocon" id="confort" href="#confort1"><center><h3>Confort</h3></center></a>
+         <div class="device-category">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/actpersiana.PNG" class="card-img-top" alt="Persianas">
+                        <div class="card-body">
+                            <h5 class="card-title">Actuador de Persianas</h5>
+                            <p class="card-text">Marca: Schneider Electric</p>
+                            <ul>
+                                <li>Voltaje: 220V</li>
+                                <li>Conectividad: RTS</li>
+                                <li>Control remoto: Sí</li>
+                                <li>Compatibilidad: Tahoma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/Termostato-Nest.jpg" class="card-img-top" alt="termostato">
+                        <div class="card-body">
+                            <h5 class="card-title">Termostato Inteligente</h5>
+                            <p class="card-text">Marca: Google Nest Learning Thermostat.</p>
+                            <ul>
+                                <li>Control de temperatura programable.</li>
+                                <li>Conectividad: Wi-Fi y aplicaciones móviles.</li>
+                                <li>Compatibilidad con asistentes de voz (Alexa, Google Assistant, Siri).</li>
+                                <li>Sensores de presencia y geolocalización para ajustar la temperatura automáticamente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/bombillaphi.jpg" class="card-img-top" alt="Bombilla">
+                        <div class="card-body">
+                            <h5 class="card-title">Bombilla Inteligente</h5>
+                            <p class="card-text">Marca: Philips Hue</p>
+                            <ul>
+                                <li>Control de color y brillo.</li>
+                                <li>Conectividad: Wi-Fi o Zigbee.</li>
+                                <li>Compatibilidad con asistentes de voz.</li>
+                                <li>Consumo energético eficiente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/difusor.jpg" class="card-img-top" alt="Difusor">
+                        <div class="card-body">
+                            <h5 class="card-title">Difusor de Aromas Inteligente</h5>
+                            <p class="card-text">Marca: Aera</p>
+                            <ul>
+                                <li>Programación de horarios de difusión.</li>
+                                <li>Conectividad: Wi-Fi</li>
+                                <li>Control de intensidad y tipos de aromas.</li>
+                                <li>Control a través de aplicaciones móviles y asistentes de voz.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/multiroom.png" class="card-img-top" alt="multiroom">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Audio Multiroom</h5>
+                            <p class="card-text">Marca: Yamaha</p>
+                            <ul>
+                                <li>Reproducción de audio en múltiples habitaciones.</li>
+                                <li>Conectividad: Wi-Fi y Bluetooth.</li>
+                                <li>Compatibilidad con servicios de streaming de música (Spotify, Apple Music, Amazon Music, etc.).</li>
+                                <li>Calidad de sonido de alta fidelidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="titulocon" id="seguridad" href="#seguridad1"><center><h3>Seguridad</h3></center></a>
+        <div class="device-category">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/camaraa.jpg" class="card-img-top" alt="Camara">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Cámaras de Seguridad</h5>
+                            <p class="card-text">Marca: Nest</p>
+                            <ul>
+                                <li>Resolución HD o superior.</li>
+                                <li>Conectividad: Wi-Fi</li>
+                                <li>Visión nocturna.</li>
+                                <li>Almacenamiento en la nube o local.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/sensormovimi.png" class="card-img-top" alt="sensor de movimiento">
+                        <div class="card-body">
+                            <h5 class="card-title">Sensor de Movimiento</h5>
+                            <p class="card-text">Marca: Samsung</p>
+                            <ul>
+                                <li>Sensores infrarrojos pasivos (PIR).</li>
+                                <li>Conectividad: Zigbee o Z-Wave.</li>
+                                <li>Alertas en tiempo real.</li>
+                                <li>Detección de movimiento con ángulo amplio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/alarma.jpg" class="card-img-top" alt="Alarma">
+                        <div class="card-body">
+                            <h5 class="card-title">Alarma de Intrusión</h5>
+                            <p class="card-text">Marca: SimpliSafe</p>
+                            <ul>
+                                <li>Conectividad: Wi-Fi o Zigbee.</li>
+                                <li>Detección de apertura/cierre de puertas y ventanas.</li>
+                                <li>Alertas en tiempo real.</li>
+                                <li>Sirena de alta potencia.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/actcerradura.jpeg" class="card-img-top" alt="Actuador de Cerradura">
+                        <div class="card-body">
+                            <h5 class="card-title">Actuador de Cerradura</h5>
+                            <p class="card-text">Marca: August</p>
+                            <ul>
+                                <li>Conectividad: Bluetooth, Wi-Fi</li>
+                                <li>Control remoto: Sí</li>
+                                <li>Compatibilidad: Alexa, Google Home</li>
+                                <li>Funciones: Acceso sin llave, Monitorización</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/monoxido.jpg" class="card-img-top" alt="Monoxido">
+                        <div class="card-body">
+                            <h5 class="card-title">Sensor de Humo y Monóxido de Carbono</h5>
+                            <p class="card-text">Marca: Nest</p>
+                            <ul>
+                                <li>Conectividad: Wi-Fi o Z-Wave.</li>
+                                <li>Alertas sonoras y notificaciones móviles.í</li>
+                                <li>Autocomprobaciones periódicas.</li>
+                                <li>Batería de larga duración.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="titulocon" id="ahorroenergetico" href="#ahorroenergetico1"><center><h3>Ahorro energético</h3></center></a>
+        <div class="device-category">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/enchufe.jpg" class="card-img-top" alt="enchufe">
+                        <div class="card-body">
+                            <h5 class="card-title">Enchufe Inteligente</h5>
+                            <p class="card-text">Marca: Amazon</p>
+                            <ul>
+                                <li>Conectividad: Wi-Fi</li>
+                                <li>Control remoto de encendido/apagado.</li>
+                                <li>Monitoreo de consumo energético.</li>
+                                <li>Compatibilidad con asistentes de voz.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/calefaccion.jpg" class="card-img-top" alt="calefaccion">
+                        <div class="card-body">
+                            <h5 class="card-title">Controlador de Calefacción por Zonas</h5>
+                            <p class="card-text">Marca: Honeywell</p>
+                            <ul>
+                                <li>Control de temperatura independiente por zonas.</li>
+                                <li>Conectividad: Wi-Fi.</li>
+                                <li>Sensores de temperatura en cada zona.</li>
+                                <li>Integración con sistemas HVAC y termostatos inteligentes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/riego.jpg" class="card-img-top" alt="riego">
+                        <div class="card-body">
+                            <h5 class="card-title">Controlador de Riego Inteligente</h5>
+                            <p class="card-text">Marca: Rachio</p>
+                            <ul>
+                                <li>Programación automática basada en las condiciones meteorológicas.</li>
+                                <li>Conectividad: Wi-Fi</li>
+                                <li>Ahorro de agua mediante la optimización de horarios de riego.</li>
+                                <li>Control a través de aplicaciones móviles.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/ventilador.jpg" class="card-img-top" alt="ventilador">
+                        <div class="card-body">
+                            <h5 class="card-title">Ventilador de Techo Inteligente</h5>
+                            <p class="card-text">Marca: Haiku</p>
+                            <ul>
+                                <li>Control de velocidad y dirección del ventilador.</li>
+                                <li>Conectividad: Wi-Fi o Bluetooth.</li>
+                                <li>Control a través de aplicaciones móviles y asistentes de voz.</li>
+                                <li>Integración con termostatos inteligentes para optimización del clima.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/tesla.jpg" class="card-img-top" alt="panel solar">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneles Solares Inteligentes</h5>
+                            <p class="card-text">Marca: Tesla</ps>
+                            <ul>
+                                <li>Conectividad: Wi-Fi.</li>
+                                <li>Integración con sistemas de almacenamiento de energía (baterías).</li>
+                                <li>Generación de energía solar.</li>
+                                <li>Monitoreo en tiempo real de la producción de energía.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="titulocon" id="comunicacion" href="#comunicacion1"><center><h3>Comunicación</h3></center></a>
+        <div class="device-category">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/hubcontrol.jpg" class="card-img-top" alt="Hub de Control">
+                        <div class="card-body">
+                            <h5 class="card-title">Hub de Control</h5>
+                            <p class="card-text">Marca: Samsung SmartThings</p>
+                            <ul>
+                                <li>Conectividad: Zigbee, Z-Wave, Wi-Fi</li>
+                                <li>Compatibilidad: Alexa, Google Home</li>
+                                <li>Funciones: Automatización, Monitorización</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/panel.jpg" class="card-img-top" alt="Panel de Control">
+                        <div class="card-body">
+                            <h5 class="card-title">Panel de Control</h5>
+                            <p class="card-text">Marca: Netatmo</p>
+                            <ul>
+                                <li>Pantalla: 7 pulgadas táctil</li>
+                                <li>Conectividad: Zigbee, Wi-Fi</li>
+                                <li>Compatibilidad: Alexa, Google Home</li>
+                                <li>Funciones: Control total del hogar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sistema de Control 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/aplicacioncontrol.jpeg" class="card-img-top" alt="Aplicación de Control">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicación de Control</h5>
+                            <p class="card-text">Marca: Apple HomeKit</p>
+                            <ul>
+                                <li>Plataforma: iOS</li>
+                                <li>Conectividad: Wi-Fi, Bluetooth</li>
+                                <li>Compatibilidad: Siri</li>
+                                <li>Funciones: Control total del hogar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sistema de Control 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/controlvoz.jpeg" class="card-img-top" alt="Control por Voz">
+                        <div class="card-body">
+                            <h5 class="card-title">Control por Voz</h5>
+                            <p class="card-text">Marca: Amazon Echo</p>
+                            <ul>
+                                <li>Asistente: Alexa</li>
+                                <li>Conectividad: Wi-Fi, Bluetooth</li>
+                                <li>Compatibilidad: Dispositivos inteligentes</li>
+                                <li>Funciones: Control por voz, Automatización</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sistema de Control 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./fotos/controlremoto.jpeg" class="card-img-top" alt="Control Remoto Universal">
+                        <div class="card-body">
+                            <h5 class="card-title">Control Remoto Universal</h5>
+                            <p class="card-text">Marca: Logitech Harmony</ps>
+                            <ul>
+                                <li>Conectividad: Wi-Fi, Bluetooth</li>
+                                <li>Compatibilidad: Alexa, Google Home</li>
+                                <li>Funciones: Control de dispositivos de entretenimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
